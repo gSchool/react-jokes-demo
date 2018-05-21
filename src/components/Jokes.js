@@ -1,5 +1,6 @@
 import React from 'react'
 import Joke from './Joke'
+import { connect } from 'react-redux'
 
 const Jokes = ({ title, jokes }) => {
 
@@ -19,4 +20,9 @@ const Jokes = ({ title, jokes }) => {
   )
 }
 
-export default Jokes
+const mapStateToProps = (state) => ({
+  jokes: state.jokes,
+  title: 'Penguin Jokes'
+})
+
+export default connect(mapStateToProps)(Jokes)

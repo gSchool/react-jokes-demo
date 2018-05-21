@@ -1,4 +1,7 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { addJoke } from '../actions'
+import { bindActionCreators } from 'redux'
 
 const AddJokeForm = ({ addJoke }) => {
 
@@ -12,6 +15,7 @@ const AddJokeForm = ({ addJoke }) => {
     }
 
     addJoke(newJoke)
+
     form.reset()
   }
 
@@ -29,4 +33,8 @@ const AddJokeForm = ({ addJoke }) => {
 
 }
 
-export default AddJokeForm
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  addJoke
+}, dispatch)
+
+export default connect(null, mapDispatchToProps)(AddJokeForm)
