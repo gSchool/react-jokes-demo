@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders the same way every time 1`] = `
+<div
+  className="App"
+>
+  <h1>
+    Jokes
+  </h1>
+  <div
+    className="joke-list"
+  >
+    <h1>
+      Penguin Jokes
+    </h1>
+    <ul
+      className="list-group"
+    >
+      <li
+        className="list-group-item"
+      >
+        <b>
+          What’s a penguin’s favorite salad?
+        </b>
+        <p>
+          Iceberg lettuce.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <form
+    className="well"
+    onSubmit={[Function]}
+  >
+    <fieldset
+      className="form-group"
+    >
+      <label
+        htmlFor="question"
+      >
+        Question
+      </label>
+      <input
+        className="form-control"
+        name="question"
+        type="text"
+      />
+      <label
+        htmlFor="answer"
+      >
+        Answer
+      </label>
+      <input
+        className="form-control"
+        name="answer"
+        type="text"
+      />
+      <button
+        className="btn btn-success"
+      >
+        Add
+      </button>
+    </fieldset>
+  </form>
+</div>
+`;
